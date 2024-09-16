@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-        validate: [/^([a-zA-Z]){3,15}[2][012]([0-9]){5,6}@akgec.ac.in$/, "Email should be of <name><studentno>@akgec.ac.in"]
+        validate: [/^([a-zA-Z]){3,15}[2][0123]([0-9]){5,6}@akgec.ac.in$/, "Email should be of <name><studentno>@akgec.ac.in"]
 
     },
     stdno: {
@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema({
         type: Number,
         required: true,
         maxlength: [13,"University Roll Number should be of 13"],
-        validate: [/^[2][2]([0-9]){11}$/, "Roll no. should be valid"],
+        validate: [/^[2][3]([0-9]){11}$/, "Roll no. should be valid"],
         unique: true
     },
     branch: {
