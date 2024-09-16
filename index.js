@@ -20,6 +20,9 @@ app.use(cors());
 
 app.use('/v1/user', apilimit, userRoute);
 app.use('/v1/get', getRoute);
+app.get('/', (req, res) => {
+    return res.status(201).json({ msg: "Server is Live!!🚀" })
+})
 
 app.listen(process.env.PORT,() => {
     console.log(`server running on port ${process.env.PORT}`);
