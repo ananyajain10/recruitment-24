@@ -1,0 +1,40 @@
+{
+  "name": "registration-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"npm install",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsc-akgec/registration-backend.git"
+  },
+  "author": "Tarun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsc-akgec/registration-backend/issues"
+  },
+  "homepage": "https://github.com/dsc-akgec/registration-backend#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "fs": "^0.0.1-security",
+    "isomorphic-fetch": "^3.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.0.12",
+    "nodemailer": "^6.9.5",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "react-google-recaptcha": "^2.1.0",
+    "uuid": "^10.0.0"
+  }
+}
